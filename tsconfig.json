@@ -1,18 +1,19 @@
 {
   "compilerOptions": {
-		"moduleResolution": "node",
+	"moduleResolution": "node",
     "module": "es2015",
     "target": "es5",
     "noImplicitAny": false,
     "sourceMap": false,
-		"experimentalDecorators": true,
-		"emitDecoratorMetadata": true,
-		"lib": [
+	"experimentalDecorators": true,
+	"emitDecoratorMetadata": true,
+    "noStrictGenericChecks": true,
+	"lib": [
 			"es2016",
 			"dom"
 		]
   },
-			  "typeRoots": [
+    "typeRoots": [
       "node_modules/@types"
     ],
 	"exclude":[
