@@ -11,5 +11,13 @@
 			"es2016",
 			"dom"
 		]
-  }
+  },
+			  "typeRoots": [
+      "node_modules/@types"
+    ],
+	"exclude":[
+			"./src/main.server.aot.ts",
+			"node_modules"
+		]
+
 }

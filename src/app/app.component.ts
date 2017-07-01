@@ -16,8 +16,16 @@ import { TransferState } from '../modules/transfer-state/transfer-state';
   ]
 })
 export class AppComponent implements OnInit {
+    message="";
+
   constructor(private cache: TransferState) {}
   ngOnInit() {
     this.cache.set('cached', true);
+  }
+    setMessage(message){
+    this.message=message;
+  }
+  clearMessage(){
+    this.message="";
   }
 }
