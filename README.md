@@ -16,7 +16,6 @@ npm run build:prod
 npm run server
 ```
 ## Test
-Includes AoT
 ```sh
 npm test
 ```
