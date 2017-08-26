@@ -1,18 +1,15 @@
-import { AppComponent } from './../src/app/app.component';
-describe('Testing message state in message.component', () => {
-  let app: AppComponent;
+import * as request from 'request-promise';
 
-  beforeEach(() => {
-    app = new AppComponent();
+describe('Testeando un endpoint', () => {
+
+
+  it('deberia mostrar exito', () => {
+    
+    request('localhost:8000/data')
+    .then(data=>{
+      expect(data).toBe('exitoo');
+    });
   });
 
-  it('should set new message', () => {
-    app.setMessage('Testing');
-    expect(app.message).toBe('Testingxxx');
-  });
 
-  it('should clear message', () => {
-    app.clearMessage();
-    expect(app.message).toBe('');
-  });
 });

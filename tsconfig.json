@@ -18,6 +18,7 @@
     ],
 	"exclude":[
 			"./src/main.server.aot.ts",
+			"./test",
 			"node_modules"
 		]
 

@@ -5,7 +5,8 @@ const serverConfig = {
         loaders: [
           {test: /\.css$/, loader: "style!css"},
           {test: /\.less$/, loader: "style!css!less"},
-          {test: /\.tsx?$/, loader: 'ts-loader' }
+          {test: /\.ts?$/, loader: 'ts-loader' },
+          { test: /\.json$/, loader: 'json-loader' }
 
         ]
       },
@@ -14,7 +15,12 @@ const serverConfig = {
       resolve: {
           extensions: ['.ts', '.tsx', '.js'],
 
-      }
+      },
+      node:{ 
+    fs: 'empty',
+    net: 'empty',
+    tls: 'empty'
+    }
 };
 
 module.exports = serverConfig;

@@ -1,6 +1,5 @@
 const { root } = require('./helpers');
 
-const { AotPlugin } = require('@ngtools/webpack');
 
 /**
  * This is a server config which should be merged on top of common config
@@ -8,7 +7,8 @@ const { AotPlugin } = require('@ngtools/webpack');
 module.exports = {
   entry: root('./src/main.server.ts'),
   output: {
-    filename: 'server.js'
+  	path:root('dist'),
+    filename:'server.js'
   },
   target: 'node'
 };

@@ -17,7 +17,7 @@ module.exports = function(config) {
       require("karma-webpack"),
       require("karma-jasmine"),
       require("karma-coverage"),
-      require("karma-phantomjs-launcher"),
+      require("karma-firefox-launcher"),
       require("karma-spec-reporter")
     ],
 
@@ -51,6 +51,6 @@ module.exports = function(config) {
       noInfo: true
     },
 
-    browsers: ['PhantomJS']
+    browsers: ['Firefox']
   });
 };   
