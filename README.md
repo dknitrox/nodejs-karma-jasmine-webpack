@@ -1,16 +1,15 @@
-# Minimal Starter with Angular on both Server and Browser Platforms
-
+# Minimal Starter with Nodejs Webpack Karma 
 ## Get Started
 ```sh
 npm run start
 ```
 ## Developement mode
-* Terminal 1: ```npm run watch```
+* Terminal 1: ```npm run build```
 * Wait for the build to finish
 * Terminal 2: ```npm run server```
 
 ## Prod mode
-Includes AoT
+Includes AoT 
 ```sh
 npm run build:prod
 npm run server

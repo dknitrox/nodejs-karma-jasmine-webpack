@@ -6,8 +6,7 @@ const serverConfig = {
           {test: /\.css$/, loader: "style!css"},
           {test: /\.less$/, loader: "style!css!less"},
           {test: /\.ts?$/, loader: 'ts-loader' },
-          { test: /\.json$/, loader: 'json-loader' }
-
+          
         ]
       },
 
