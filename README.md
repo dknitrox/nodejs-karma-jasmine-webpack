@@ -1,4 +1,4 @@
-# Minimal Starter with Nodejs Webpack Karma 
+# Minimal Starter with Nodejs Webpack Karma Jasmien
 ## Get Started
 ```sh
 npm run start
